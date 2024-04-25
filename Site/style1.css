@@ -1,0 +1,302 @@
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+  background-color: #f4f4f4;
+}
+
+#logo {
+  height: 100px;
+  width: auto;
+}
+
+header {
+  background-color: #333;
+  color: white;
+  padding: 1em 0;
+}
+
+footer {
+  flex-shrink: 0;
+}
+
+#header-container {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 10px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+main {
+  padding: 20px;
+}
+
+.radio-iframe {
+  width: 400px;
+  height: 200px;
+  border: none;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  display: block;
+}
+
+.radio-attribution {
+  display: block;
+  font-size: 0.9em;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  color: #666;
+  text-decoration: none;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+.manga-section {
+  padding: 80px 0;
+  text-align: center;
+  background-color: #f9f9f9;
+}
+
+.section-header {
+  margin-bottom: 60px;
+}
+
+.section-header h1 {
+  font-size: 48px;
+  color: #222;
+  margin-bottom: 10px;
+}
+
+.section-header p {
+  font-size: 24px;
+  color: #666;
+}
+
+.manga-section h2 {
+  font-size: 36px;
+  color: #222;
+  margin-bottom: 40px;
+}
+
+.manga-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.manga-item {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s;
+  text-decoration: none;
+}
+
+.manga-item:hover {
+  transform: translateY(-10px);
+}
+
+.manga-image {
+  position: relative;
+}
+
+.manga-image img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.manga-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.manga-item:hover .manga-overlay {
+  opacity: 1;
+}
+
+.manga-overlay i {
+  color: #fff;
+  font-size: 36px;
+}
+
+.manga-content {
+  padding: 20px;
+}
+
+.manga-content h3 {
+  font-size: 24px;
+  color: #222;
+  margin-bottom: 10px;
+}
+
+.manga-content p {
+  font-size: 18px;
+  color: #666;
+}
+
+footer {
+  background-color: #222;
+  color: #fff;
+  padding: 60px 0;
+}
+
+footer {
+  background-color: #222;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer-content .logo a img {
+  height: 50px;
+  width: auto;
+  vertical-align: middle;
+}
+
+.footer-content .social-media a {
+  margin: 0 10px;
+  color: #fff;
+  font-size: 24px;
+}
+
+.footer-content a:hover {
+  color: #c0c0c0;
+  text-decoration: none;
+}
+
+footer p {
+  margin-top: 10px;
+  font-size: 0.8em;
+}
+
+.social-media {
+  display: flex;
+  gap: 20px;
+}
+
+.social-media a {
+  color: #fff;
+  font-size: 24px;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.social-media a:hover {
+  color: #ffcc00;
+}
+
+.manga-post {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 60px;
+  background-color: #fff;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.post-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.post-header h1 {
+  font-size: 48px;
+  color: #222;
+  margin-bottom: 20px;
+}
+
+.post-header p {
+  font-size: 20px;
+  color: #666;
+}
+
+.post-date {
+  font-weight: bold;
+  color: #ffcc00;
+}
+
+.post-content {
+  line-height: 1.8;
+}
+
+.post-content img {
+  width: 100%;
+  max-height: 500px;
+  object-fit: cover;
+  margin-bottom: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.post-content p {
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+.post-content h2 {
+  font-size: 36px;
+  color: #222;
+  margin-top: 60px;
+  margin-bottom: 30px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #ffcc00;
+}
+
+.post-content ul {
+  margin-bottom: 30px;
+  padding-left: 30px;
+}
+
+.post-content li {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.post-content a {
+  color: #ffcc00;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.post-content a:hover {
+  color: #e6b800;
+}

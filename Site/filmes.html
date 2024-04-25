@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Filmes | Cultura Geek</title>
+    <link rel="stylesheet" href="css_trailer.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div id="header-container">
+        <div class="logo">
+          <a href="home.html"
+            ><img src="imagem/1.png" alt="Logo" id="logo"
+          /></a>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="games.html">Games</a></li>
+            <li><a href="mangas.html">Mangás</a></li>
+            <li><a href="hqs.html">HQS</a></li>
+            <li><a href="filmes.html">Filmes</a></li>
+            <li><a href="Eventos.html">Eventos</a></li>
+
+            <li><a href="contato.html">Contato</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="trailer-section">
+        <div class="section-header">
+          <h1>Filmes</h1>
+        </div>
+        <div class="trailer-grid">
+          <article class="trailer-item">
+            <h2>Deadpool & Wolverine</h2>
+            <p>
+              Deadpool é um anti-herói único e irreverente do Universo Marvel.
+              Conhecido por seu humor ácido, quebra da quarta parede e
+              comportamento politicamente incorreto, Deadpool é na verdade Wade
+              Wilson, um ex-mercenário que adquiriu habilidades de regeneração
+              celular depois de se submeter a um experimento que quase o matou.
+            </p>
+            <video controls id="trailer1">
+              <source
+                src="trailer/Deadpool  Wolverine  Trailer Oficial Legendado.mp4"
+                type="video/mp4"
+              />
+              Your browser does not support the video tag.
+            </video>
+          </article>
+          <article class="trailer-item">
+            <h2>Homem-Aranha - Sem Volta Para Casa</h2>
+            <p>
+              Homem-Aranha: Sem Volta Para Casa" é um filme de super-herói que
+              segue a jornada de Peter Parker, interpretado por Tom Holland,
+              após sua identidade secreta ser revelada ao mundo pelo vilão
+              Mysterio no final de "Homem-Aranha: Longe de Casa". Com sua vida
+              virada de cabeça para baixo, Peter busca a ajuda do Doutor
+              Estranho para reverter o feitiço que expôs sua verdadeira
+              identidade.
+            </p>
+            <video controls id="trailer2">
+              <source
+                src="trailer/Homem-Aranha - Sem Volta Para Casa  Trailer 2 Oficial Legendado.mp4"
+                type="video/mp4"
+              />
+              Your browser does not support the video tag.
+            </video>
+          </article>
+          <article class="trailer-item">
+            <h2>Vingadores - Guerra Infinita</h2>
+            <p>
+              "Vingadores: Guerra Infinita" é um filme de super-heróis que reúne
+              os principais personagens do Universo Cinematográfico Marvel em
+              uma batalha épica contra o temível vilão Thanos. O filme segue
+              Thanos em sua busca pelas seis Joias do Infinito, artefatos
+              cósmicos de imenso poder, que ele planeja usar para erradicar
+              metade da vida no universo e trazer equilíbrio ao cosmos.
+            </p>
+            <video controls id="trailer3">
+              <source
+                src="trailer/Vingadores  - Guerra Infinita   Trailer Oficial 2 Legendado.mp4"
+                type="video/mp4"
+              />
+              Your browser does not support the video tag.
+            </video>
+          </article>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer-content">
+        <div class="logo">
+          <a href="home.html">
+            <img src="imagem/1.png" alt="Logo Luizim Nerd" />
+          </a>
+        </div>
+        <p>&copy; 2024 luizim Nerd. Todos os direitos reservados.</p>
+        <div class="social-media">
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      const trailers = document.querySelectorAll("video");
+
+      trailers.forEach((trailer) => {
+        trailer.addEventListener("click", () => {
+          if (trailer.paused) {
+            trailer.play();
+          } else {
+            trailer.pause();
+          }
+        });
+      });
+    </script>
+  </body>
+</html>

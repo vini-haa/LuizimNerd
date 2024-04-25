@@ -1,0 +1,140 @@
+/* Estilos básicos e reset */
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+  background-color: #f4f4f4;
+}
+
+header {
+  background-color: #333;
+  color: white;
+  padding: 1em 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer {
+  background-color: #222;
+  color: white;
+  text-align: center;
+  padding: 60px 0;
+  flex-shrink: 0;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+nav .logo,
+nav .menu a,
+nav .search button {
+  color: white;
+  text-decoration: none;
+}
+
+nav .search input[type="text"] {
+  padding: 5px;
+  border-radius: 5px;
+  border: none;
+}
+
+nav .search button {
+  background-color: #1a1a1a;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+main {
+  padding: 20px;
+}
+
+.featured .item,
+.list .list-item,
+.highlights .item {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.featured .item img,
+.highlights .item img,
+.list .list-item img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.featured .item h3,
+.highlights .item h3,
+.list .list-item h3 {
+  font-size: 24px;
+  color: #222;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+}
+
+.list .list-item {
+  display: flex;
+  align-items: center;
+  text-align: left;
+}
+
+.list .list-content {
+  padding: 20px;
+  flex-grow: 1;
+}
+
+.list .list-content p,
+.list .list-content h3 {
+  color: #666;
+}
+
+.list .btn {
+  background-color: #333;
+  color: white;
+  padding: 10px 20px;
+  display: inline-block;
+  margin-top: 20px;
+}
+
+.footer-content,
+.social-media {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.social-media a {
+  color: #fff;
+  margin: 0 10px;
+  transition: color 0.3s;
+}
+
+.social-media a:hover {
+  color: #ffcc00;
+}
+
+@media (max-width: 768px) {
+  .featured-items,
+  .highlight-items,
+  .list .list-item {
+    flex-direction: column;
+  }
+
+  .list .list-content,
+  .list .list-item img {
+    width: 100%;
+  }
+}
